@@ -1,0 +1,27 @@
+{
+  "name": "questbound",
+  "version": "1.0.0",
+  "description": "API for QuestBound, a platform where users can create accounts, game masters can create RPG campaigns, and players can apply to join them.",
+  "keywords": [
+    "rpg",
+    "api",
+    "javascript",
+    "express",
+    "mongojs"
+  ],
+  "license": "ISC",
+  "author": "Danielle-Luz",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.10.3",
+    "passport": "^0.7.0"
+  }
+}
