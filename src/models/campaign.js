@@ -42,6 +42,6 @@ const campaignSchema = new mongoose.Schema(
   },
 );
 
-const campaign = mongoose.model("campaign", campaignSchema);
+const campaignModel = mongoose.model("campaign", campaignSchema);
 
-export default campaign;
+export default campaignModel;

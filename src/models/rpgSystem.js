@@ -11,6 +11,6 @@ const rpgSystemSchema = new mongoose.Schema({
   }
 });
 
-const rpgSystem = mongoose.model("rpgSystem", rpgSystemSchema);
+const rpgSystemModel = mongoose.model("rpgSystem", rpgSystemSchema);
 
-export default rpgSystem;
+export default rpgSystemModel;
