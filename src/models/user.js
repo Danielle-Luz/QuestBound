@@ -21,7 +21,7 @@ const userSchema = new mongoose.Schema({
   },
   preferredRpgSystem: [
     {
-      type: mongoose.SchemaTypes.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
       ref: "rpgSystem",
     },
   ],
