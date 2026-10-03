@@ -20,6 +20,8 @@
     * Dungeons & Dragons
     * Tormenta20
 * Users should also be able to create accounts by signing in with Google or Discord.
+* An email should not be related to more than one account.
+* If a password is provided when creating a user with an email, it should contain at least 8 caracters.
 
 ### RPG Campaigns
 
