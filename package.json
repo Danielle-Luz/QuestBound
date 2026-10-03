@@ -12,9 +12,11 @@
   "license": "ISC",
   "author": "Danielle-Luz",
   "type": "module",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec \"node --env-file=.env\" src/server.js",
+    "start": "node --env-file=.env src/server.js"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
