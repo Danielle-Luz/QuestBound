@@ -1,7 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 
-const database = mongoose
+mongoose
   .connect(process.env.databaseUrl, {
     bufferCommands: true,
     maxPoolSize: 20,
@@ -14,4 +14,4 @@ const server = express();
 
 server.listen(8080, () => console.log("Server started."));
 
-export { database, server };
+export default server;
