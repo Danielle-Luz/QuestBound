@@ -17,6 +17,6 @@ const socialLoginSchema = mongoose.Schema({
   }
 });
 
-const socialLogin = mongoose.model("socialLogin", socialLoginSchema);
+const socialLoginModel = mongoose.model("socialLogin", socialLoginSchema);
 
-export default socialLogin;
+export default socialLoginModel;
