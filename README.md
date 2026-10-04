@@ -105,3 +105,83 @@
 * The campaign creator (master) should be able to kick players out of the campaign.
 * Users should be able to leave an RPG campaign voluntarily.
 * If a player is kicked out of a campaign or leaves voluntarily, the number of available vacancies should increase.
+
+# API Functionalities by Resource
+
+## User
+
+* Create a user
+* Get a user
+* Update a user
+* Authenticate a user
+* Log out
+
+## RPG System
+
+* Get all RPG systems
+
+## Class
+
+* Get all classes
+
+## Origin
+
+* Get all origins
+
+## Species
+
+* Get all species
+
+## Campaign
+
+* Create a campaign
+* Get a campaign by ID, including its candidatures
+* Get multiple campaigns with:
+
+  * User-preferred RPG systems prioritized
+  * Results ordered by creation date by default
+  * Number of remaining vacancies
+* Filter campaigns by:
+
+  * RPG system
+  * Age rating
+  * Name
+  * Vacancy availability
+* Paginate campaign results using:
+
+  * Page
+  * Limit
+* Sort campaigns by:
+
+  * Creation date
+  * Last update date
+  * Age rating
+  * Name
+* Update a campaign
+* Delete a campaign
+
+## Candidature
+
+* Create a candidature
+* Get a user's candidatures, including the associated character
+* Get a campaign's candidatures, including the associated character
+* Change the character associated with a candidature
+* Accept a candidature
+* Reject a candidature
+* Withdraw a candidature
+* Remove a candidature
+* Increase user experience level when candidature is accepted
+
+## Character
+
+* Create a character
+* Get all characters belonging to a user
+* Update a character
+* Delete a character
+
+## Feedback
+
+* Create feedback
+* Get feedback received by a user
+* Update feedback
+* Delete feedback
