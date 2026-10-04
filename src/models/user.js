@@ -43,7 +43,7 @@ userSchema.static.findByEmail = async (email) => {
   return this.findOne({ email: email });
 }
 
-userSchema.static.findOneAndUpdate = async (id, updatedUser) => {
+userSchema.static.updateById = async (id, updatedUser) => {
   return this.findOneAndUpdate({ _id: id}, updatedUser, { new: true });
 }
 
