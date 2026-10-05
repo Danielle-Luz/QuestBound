@@ -17,11 +17,11 @@ const socialLoginSchema = mongoose.Schema({
   },
 });
 
-socialLoginSchema.static.create = async function (newLogin) {
+socialLoginSchema.statics.create = async function (newLogin) {
   return this.create(newLogin);
 };
 
-socialLoginSchema.static.getByProvider = async function (
+socialLoginSchema.statics.getByProvider = async function (
   providerName,
   provideriD,
 ) {
@@ -31,7 +31,7 @@ socialLoginSchema.static.getByProvider = async function (
   });
 };
 
-socialLoginSchema.static.getByUserId = async function (userId) {
+socialLoginSchema.statics.getByUserId = async function (userId) {
   return this.findOne({ user: userId });
 };
 

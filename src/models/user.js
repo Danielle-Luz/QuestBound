@@ -31,21 +31,21 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-userSchema.static.create = async (newUser) => {
+userSchema.statics.create = function async(newUser) {
   return this.create(newUser);
-}
+};
 
-userSchema.static.findById = async (id) => {
-  return this.findOne({ _id: mongoose.ObjectId(id) });
-}
+userSchema.statics.findById = function async(id) {
+  return this.findOne({ _id: id });
+};
 
-userSchema.static.findByEmail = async (email) => {
+userSchema.statics.findByEmail = function async(email) {
   return this.findOne({ email: email });
-}
+};
 
-userSchema.static.updateById = async (id, updatedUser) => {
-  return this.findOneAndUpdate({ _id: id}, updatedUser, { new: true });
-}
+userSchema.statics.updateById = function async(id, updatedUser) {
+  return this.findOneAndUpdate({ _id: id }, updatedUser, { new: true });
+};
 
 const userModel = mongoose.model("user", userSchema);
 
